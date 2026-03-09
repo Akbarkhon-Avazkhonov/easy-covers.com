@@ -10,15 +10,15 @@ export function HeroSection() {
 
   const battles = [
     {
-      title: 'Кожа vs Силикон',
-      subtitle: 'Какой чехол лучше всего защищает?',
-      left: { name: 'Кожаный чехол', emoji: '🧥', color: 'from-orange-400' },
-      right: { name: 'Силиконовый чехол', emoji: '🏰', color: 'from-cyan-400' },
+      title: 'Leather vs Silicone',
+      subtitle: 'Which phone case offers the best protection?',
+      left: { name: 'Leather Case', emoji: '🧥', color: 'from-orange-400' },
+      right: { name: 'Silicone Case', emoji: '🏰', color: 'from-cyan-400' },
       link: '/comparison'
     },
     {
       title: 'iPhone vs Android',
-      subtitle: 'Главное противостояние в смартфонах',
+      subtitle: 'The ultimate smartphone showdown',
       left: { name: 'iPhone 16', emoji: '🍎', color: 'from-gray-400' },
       right: { name: 'Samsung Galaxy', emoji: '🌈', color: 'from-blue-400' },
       link: '/comparison'
@@ -36,7 +36,7 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Честные сравнения товаров. Полная информация о плюсах и минусах.
+            Honest product comparisons and reviews. Complete information about the pros and cons.
           </p>
         </div>
 
@@ -81,8 +81,8 @@ export function HeroSection() {
               {/* CTA */}
               <div className="flex justify-center">
                 <Link href={battles[activeSlide].link}>
-                  <Button className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white" size="lg">
-                    Читать сравнение <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-shadow" size="lg">
+                    Read Comparison <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
               </div>

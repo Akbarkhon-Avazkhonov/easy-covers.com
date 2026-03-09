@@ -17,16 +17,16 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-8">
           <Link href="#battles" className="text-sm font-medium hover:text-primary transition">
-            Сравнения
+            Comparisons
           </Link>
           <Link href="#guides" className="text-sm font-medium hover:text-primary transition">
-            Гайды
+            Guides
           </Link>
           <Link href="#tests" className="text-sm font-medium hover:text-primary transition">
-            Тесты
+            Tests
           </Link>
           <Link href="#picks" className="text-sm font-medium hover:text-primary transition">
-            Топ выборы
+            Top Picks
           </Link>
         </div>
 

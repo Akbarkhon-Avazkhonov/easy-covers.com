@@ -6,8 +6,8 @@ import Link from 'next/link'
 export function FeaturedProducts() {
   const topProducts = [
     {
-      title: 'Кожаный чехол',
-      description: 'Премиум защита с элегантным видом',
+      title: 'Leather Case',
+      description: 'Premium protection with elegant style',
       emoji: '🧥',
       color: 'from-amber-500',
       badge: 'Premium',
@@ -15,41 +15,41 @@ export function FeaturedProducts() {
       link: '/comparison'
     },
     {
-      title: 'Силиконовый чехол',
-      description: 'Легкая и удобная защита',
+      title: 'Silicone Case',
+      description: 'Lightweight and convenient protection',
       emoji: '🏰',
       color: 'from-cyan-400',
-      badge: 'Популярный',
+      badge: 'Popular',
       rating: 4,
       link: '/comparison'
     },
     {
-      title: 'Эко-чехол',
-      description: 'Экологичный выбор для планеты',
+      title: 'Eco Case',
+      description: 'Eco-friendly choice for the planet',
       emoji: '🌿',
       color: 'from-green-500',
-      badge: 'Экологичный',
+      badge: 'Eco-Friendly',
       rating: 4.5,
       link: '/guide'
     },
   ]
 
   return (
-    <section id="picks" className="py-16 md:py-24 bg-gradient-to-b from-background to-purple-500/5">
+    <section id="picks" className="py-16 md:py-24 bg-gradient-to-b from-background via-purple-500/5 to-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-bold mb-4">
-            ⭐ Топ выборы
+            ⭐ Top Picks
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            Наши лучшие<br />
+            Our Best<br />
             <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
-              рекомендации
+              Recommendations
             </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Тщательно протестированные товары, которые действительно стоят внимания
+            Thoroughly tested products that truly deserve your attention
           </p>
         </div>
 

@@ -110,3 +110,37 @@
     font-family: 'Space Grotesk', sans-serif;
   }
 }
+
+@layer components {
+  /* Enhanced shadows for premium look */
+  .shadow-card {
+    @apply shadow-lg hover:shadow-2xl transition-shadow duration-300;
+  }
+  
+  .shadow-button {
+    @apply shadow-md hover:shadow-lg transition-shadow;
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  /* Gradient backgrounds */
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-purple-600 to-orange-500;
+  }
+  
+  .bg-gradient-accent {
+    @apply bg-gradient-to-r from-cyan-400 to-blue-500;
+  }
+  
+  /* Text gradients */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent;
+  }
+}

@@ -14,25 +14,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'EasyCo - Сравнение товаров',
-  description: 'Честные сравнения и обзоры товаров. Плюсы, минусы, реальные тесты.',
+  title: 'EasyCo - Product Comparisons & Reviews',
+  description: 'Honest product comparisons and reviews. Discover the pros and cons of every product you want to buy.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/favicon.jpg',
+    apple: '/favicon.jpg',
   },
 }
 
@@ -42,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ru" className={`${spaceGrotesk.variable} ${plusJakartaSans.variable}`}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${plusJakartaSans.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

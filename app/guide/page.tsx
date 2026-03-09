@@ -18,15 +18,15 @@ export default function GuidePage() {
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             >
               <span className="bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
-                Полный гайд по выбору чехла
+                Complete Phone Case Selection Guide
               </span>
             </h1>
             <p className="text-lg text-muted-foreground mb-6">
-              Все, что вам нужно знать, чтобы выбрать идеальный чехол для вашего смартфона
+              Everything you need to know to choose the perfect case for your smartphone
             </p>
             <div className="flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-green-500/10 text-green-600 rounded-full text-sm font-bold">📚 Полный гайд</span>
-              <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-bold">Для новичков</span>
+              <span className="px-3 py-1 bg-green-500/10 text-green-600 rounded-full text-sm font-bold">📚 Complete Guide</span>
+              <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-bold">For Everyone</span>
             </div>
           </div>
         </div>
@@ -38,10 +38,10 @@ export default function GuidePage() {
           {/* Table of Contents */}
           <Card className="p-6 md:p-8 mb-12 bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200/30">
             <h2 className="text-xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Содержание
+              Table of Contents
             </h2>
             <ul className="space-y-2">
-              {['Материалы', 'Защита', 'Дизайн', 'Бюджет', 'Уход', 'Выбор'].map((item, idx) => (
+              {['Materials', 'Protection', 'Design', 'Budget', 'Care', 'Choice'].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-2">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
                     {idx + 1}
@@ -57,17 +57,17 @@ export default function GuidePage() {
           {/* Section 1 */}
           <div className="mb-12" id="section-0">
             <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              1. Выберите правильный материал
+              1. Choose the Right Material
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Первый шаг - понять, какой материал лучше всего соответствует вашим потребностям. Каждый материал имеет свои особенности.
+              The first step is to understand which material best suits your needs. Each material has its own characteristics.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
-                { name: 'Кожа', emoji: '🧥', color: 'from-amber-400', features: ['Премиум вид', 'Долговечно', 'Дорого'] },
-                { name: 'Силикон', emoji: '🏰', color: 'from-cyan-400', features: ['Дешево', 'Практично', 'Собирает пыль'] },
-                { name: 'TPU', emoji: '🛡️', color: 'from-blue-400', features: ['Баланс', 'Хорошая защита', 'Надежно'] },
+                { name: 'Leather', emoji: '🧥', color: 'from-amber-400', features: ['Premium look', 'Durable', 'Expensive'] },
+                { name: 'Silicone', emoji: '🏰', color: 'from-cyan-400', features: ['Affordable', 'Practical', 'Collects dust'] },
+                { name: 'TPU', emoji: '🛡️', color: 'from-blue-400', features: ['Balance', 'Good protection', 'Reliable'] },
               ].map((material, idx) => (
                 <Card key={idx} className="p-4 bg-gradient-to-br from-background to-background hover:shadow-lg transition">
                   <div className="text-3xl mb-2">{material.emoji}</div>
@@ -88,26 +88,26 @@ export default function GuidePage() {
           {/* Section 2 */}
           <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-red-50/50 to-orange-50/50 rounded-xl border border-red-200/20" id="section-1">
             <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              2. Защита - главная функция
+              2. Protection is the Main Function
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Самая важная функция чехла - это защита вашего телефона от падений и ударов.
+              The most important function of a case is to protect your phone from drops and impacts.
             </p>
 
             <div className="bg-white p-6 rounded-lg border border-border">
               <div className="space-y-4">
                 <div>
-                  <p className="font-bold mb-2">Уровень защиты от падений (1-5 метров)</p>
+                  <p className="font-bold mb-2">Drop Protection Level (6.5-16 feet)</p>
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm">Кожа</span>
+                      <span className="text-sm">Leather</span>
                       <div className="w-full max-w-xs bg-gray-200 rounded-full h-3 mx-4">
                         <div className="bg-amber-500 h-3 rounded-full" style={{ width: '85%' }}></div>
                       </div>
                       <span className="text-sm font-bold">4/5</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm">Силикон</span>
+                      <span className="text-sm">Silicone</span>
                       <div className="w-full max-w-xs bg-gray-200 rounded-full h-3 mx-4">
                         <div className="bg-cyan-500 h-3 rounded-full" style={{ width: '75%' }}></div>
                       </div>
@@ -129,43 +129,43 @@ export default function GuidePage() {
           {/* Section 3 */}
           <div className="mb-12" id="section-2">
             <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              3. Дизайн и стиль
+              3. Design and Style
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Внешний вид чехла говорит о вашем личном стиле. Он должен быть красивым и практичным.
+              The appearance of a case reflects your personal style. It should be beautiful and practical.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="p-6 bg-gradient-to-br from-purple-50 to-purple-50 border-2 border-purple-200/30">
-                <h3 className="text-lg font-bold mb-3">Минималист</h3>
+                <h3 className="text-lg font-bold mb-3">Minimalist</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Простые формы, нейтральные цвета, никакого лишнего. Рекомендуем: черные или серые кожаные чехлы.
+                  Simple forms, neutral colors, nothing extra. We recommend: black or gray leather cases.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm">
                     <Check className="w-4 h-4 text-green-500" />
-                    Кожа
+                    Leather
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Check className="w-4 h-4 text-green-500" />
-                    TPU классика
+                    Classic TPU
                   </div>
                 </div>
               </Card>
 
               <Card className="p-6 bg-gradient-to-br from-pink-50 to-pink-50 border-2 border-pink-200/30">
-                <h3 className="text-lg font-bold mb-3">Яркий стиль</h3>
+                <h3 className="text-lg font-bold mb-3">Bold Style</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Яркие цвета, интересные узоры, выделяться из толпы. Идеально: цветной силикон.
+                  Bright colors, interesting patterns, stand out from the crowd. Ideal: colorful silicone.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm">
                     <Check className="w-4 h-4 text-green-500" />
-                    Цветной силикон
+                    Colored Silicone
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Check className="w-4 h-4 text-green-500" />
-                    Паттерн TPU
+                    Pattern TPU
                   </div>
                 </div>
               </Card>
@@ -175,13 +175,13 @@ export default function GuidePage() {
           {/* CTA */}
           <Card className="p-6 md:p-8 bg-gradient-to-r from-green-600 to-emerald-600 text-white text-center">
             <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Готовы выбрать чехол?
+              Ready to Choose a Case?
             </h2>
             <p className="mb-6 opacity-90">
-              Посмотрите наши детальные сравнения товаров
+              Check out our detailed product comparisons
             </p>
             <Button className="bg-white text-green-600 hover:bg-gray-100">
-              К сравнениям <ArrowRight className="w-4 h-4 ml-2" />
+              To Comparisons <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Card>
         </div>

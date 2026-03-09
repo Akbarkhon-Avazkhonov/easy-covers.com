@@ -6,38 +6,38 @@ import { ArrowRight } from 'lucide-react'
 
 export default function ComparisonPage() {
   const leatherPros = [
-    'Премиум ощущение в руках',
-    'Улучшается с возрастом (патина)',
-    'Отличная защита от падений',
-    'Дышащий материал',
-    'Стильный вид',
-    'Долговечность при правильном уходе',
+    'Premium feel in hand',
+    'Improves with age (patina)',
+    'Excellent drop protection',
+    'Breathable material',
+    'Stylish appearance',
+    'Durability with proper care',
   ]
 
   const leatherCons = [
-    'Дорого (от $50+)',
-    'Требует регулярного ухода',
-    'Может окрашивать пальцы',
-    'Со временем может потертаться',
-    'Чувствителен к влаге',
+    'Expensive ($50+)',
+    'Requires regular maintenance',
+    'Can stain fingers',
+    'May get scratched over time',
+    'Sensitive to moisture',
   ]
 
   const siliconePros = [
-    'Доступная цена ($10-20)',
-    'Простой уход (просто протри)',
-    'Отличное сцепление',
-    'Мягкое ощущение',
-    'Хорошая защита от ударов',
-    'Множество цветов и дизайнов',
+    'Affordable price ($10-20)',
+    'Easy to clean (just wipe)',
+    'Excellent grip',
+    'Soft feel',
+    'Good drop protection',
+    'Many colors and designs',
   ]
 
   const siliconeCons = [
-    'Собирает пыль и грязь',
-    'Становится липким со временем',
-    'Может испачкать одежду',
-    'Менее долговечно',
-    'Выглядит дешево',
-    'Может пожелтеть под солнцем',
+    'Collects dust and dirt',
+    'Gets sticky over time',
+    'Can stain clothing',
+    'Less durable',
+    'Looks cheap',
+    'Can yellow in the sun',
   ]
 
   return (
@@ -53,16 +53,16 @@ export default function ComparisonPage() {
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             >
               <span className="bg-gradient-to-r from-purple-600 via-orange-500 to-pink-500 bg-clip-text text-transparent">
-                Кожа vs Силикон
+                Leather vs Silicone
               </span>
             </h1>
             <p className="text-lg text-muted-foreground mb-6">
-              Полное сравнение двух самых популярных материалов для чехлов смартфонов
+              Complete comparison of the two most popular materials for smartphone cases
             </p>
             <div className="flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-bold">⚔️ Сравнение</span>
-              <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-bold">📋 Гайд</span>
-              <span className="px-3 py-1 bg-accent/10 text-cyan-600 rounded-full text-sm font-bold">2024</span>
+              <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-bold">⚔️ Comparison</span>
+              <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-bold">📋 Guide</span>
+              <span className="px-3 py-1 bg-accent/10 text-cyan-600 rounded-full text-sm font-bold">2026</span>
             </div>
           </div>
         </div>
@@ -74,23 +74,23 @@ export default function ComparisonPage() {
           {/* Intro */}
           <div className="mb-12 p-6 md:p-8 bg-gradient-to-br from-purple-50/50 to-orange-50/50 rounded-xl border border-purple-200/20">
             <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Введение
+              Introduction
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              Когда дело доходит до защиты смартфона, выбор материала чехла - это решающий фактор. В этом подробном сравнении мы рассмотрим два самых популярных материала: классическую кожу и современный силикон.
+              When it comes to protecting your smartphone, choosing the right case material is a crucial decision. In this detailed comparison, we'll examine the two most popular materials: classic leather and modern silicone.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Оба материала имеют свои сильные и слабые стороны, и ваш выбор будет зависеть от ваших приоритетов - будь то стиль, функциональность или цена.
+              Both materials have their strengths and weaknesses, and your choice will depend on your priorities - whether that's style, functionality, or price.
             </p>
           </div>
 
           {/* Comparison */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Плюсы и Минусы
+              Pros and Cons
             </h2>
             <ProConComparison
-              productName="Кожа vs Силикон"
+              productName="Leather vs Silicone"
               pros={leatherPros}
               cons={siliconeCons}
             />
@@ -99,7 +99,7 @@ export default function ComparisonPage() {
           {/* Detailed Comparison */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Детальное сравнение
+              Detailed Comparison
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -110,25 +110,25 @@ export default function ComparisonPage() {
                     🧥
                   </div>
                   <h3 className="text-xl font-bold" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                    Кожаный чехол
+                    Leather Case
                   </h3>
                 </div>
                 <p className="text-sm text-foreground/80 mb-4">
-                  Премиум материал, который обеспечивает элегантность и надежную защиту.
+                  Premium material that provides elegance and reliable protection.
                 </p>
                 <div className="space-y-3">
                   <div>
-                    <p className="text-xs font-bold text-muted-foreground mb-1">Цена</p>
+                    <p className="text-xs font-bold text-muted-foreground mb-1">Price</p>
                     <p className="text-sm font-bold">$50 - $100+</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-muted-foreground mb-1">Долговечность</p>
+                    <p className="text-xs font-bold text-muted-foreground mb-1">Durability</p>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div className="bg-orange-500 h-2 rounded-full" style={{ width: '85%' }}></div>
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-muted-foreground mb-1">Стиль</p>
+                    <p className="text-xs font-bold text-muted-foreground mb-1">Style</p>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div className="bg-orange-500 h-2 rounded-full" style={{ width: '95%' }}></div>
                     </div>
@@ -143,25 +143,25 @@ export default function ComparisonPage() {
                     🏰
                   </div>
                   <h3 className="text-xl font-bold" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                    Силиконовый чехол
+                    Silicone Case
                   </h3>
                 </div>
                 <p className="text-sm text-foreground/80 mb-4">
-                  Практичный выбор, обеспечивающий хорошую защиту по доступной цене.
+                  Practical choice that provides good protection at an affordable price.
                 </p>
                 <div className="space-y-3">
                   <div>
-                    <p className="text-xs font-bold text-muted-foreground mb-1">Цена</p>
+                    <p className="text-xs font-bold text-muted-foreground mb-1">Price</p>
                     <p className="text-sm font-bold">$10 - $20</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-muted-foreground mb-1">Долговечность</p>
+                    <p className="text-xs font-bold text-muted-foreground mb-1">Durability</p>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div className="bg-cyan-500 h-2 rounded-full" style={{ width: '60%' }}></div>
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-muted-foreground mb-1">Практичность</p>
+                    <p className="text-xs font-bold text-muted-foreground mb-1">Practicality</p>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div className="bg-cyan-500 h-2 rounded-full" style={{ width: '90%' }}></div>
                     </div>
@@ -174,13 +174,13 @@ export default function ComparisonPage() {
           {/* Conclusion */}
           <Card className="p-6 md:p-8 bg-gradient-to-r from-purple-500/10 to-orange-500/10 border-2 border-purple-200/30">
             <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Кто выигрывает?
+              Who Wins?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              <span className="font-bold text-foreground">Кожа выигрывает, если:</span> Вы цените премиум качество, долговечность и готовы инвестировать в хороший чехол. Кожа становится красивее с возрастом и служит годами.
+              <span className="font-bold text-foreground">Leather Wins If:</span> You value premium quality, durability, and are willing to invest in a good case. Leather becomes more beautiful with age and lasts for years.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              <span className="font-bold text-foreground">Силикон выигрывает, если:</span> Вы хотите практичный, доступный чехол, который просто защищает телефон без лишних хлопот. Идеален для активного образа жизни.
+              <span className="font-bold text-foreground">Silicone Wins If:</span> You want a practical, affordable case that simply protects your phone without extra hassle. Ideal for an active lifestyle.
             </p>
           </Card>
         </div>

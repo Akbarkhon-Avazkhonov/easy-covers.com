@@ -16,39 +16,39 @@ export function Footer() {
               <span className="font-bold text-lg">EasyCo</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Честные сравнения и тесты товаров
+              Honest product comparisons and tests
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="font-bold mb-4">Навигация</h4>
+            <h4 className="font-bold mb-4">Navigation</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground transition">Сравнения</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">Гайды</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">Тесты</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">О нас</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Comparisons</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Guides</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Tests</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">About</Link></li>
             </ul>
           </div>
 
           {/* Categories */}
           <div>
-            <h4 className="font-bold mb-4">Категории</h4>
+            <h4 className="font-bold mb-4">Categories</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground transition">Чехлы</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">Смартфоны</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">Аксессуары</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">Наушники</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Cases</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Smartphones</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Accessories</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Headphones</Link></li>
             </ul>
           </div>
 
           {/* Legal */}
           <div>
-            <h4 className="font-bold mb-4">Информация</h4>
+            <h4 className="font-bold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground transition">Политика конфиденциальности</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">Условия использования</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition">Контакты</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Privacy Policy</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Terms of Use</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition">Contact</Link></li>
             </ul>
           </div>
         </div>
@@ -57,7 +57,7 @@ export function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2026 EasyCo. Все права защищены.
+              © 2026 EasyCo. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link href="#" className="text-muted-foreground hover:text-foreground transition text-sm">

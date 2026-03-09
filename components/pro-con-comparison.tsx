@@ -20,7 +20,7 @@ export function ProConComparison({ productName, pros, cons, imageUrl }: ProConCo
               <Zap className="w-5 h-5 text-black" />
             </div>
             <h3 className="text-2xl font-bold text-cyan-600" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Плюсы
+              Pros
             </h3>
           </div>
           <ul className="space-y-3">
@@ -40,7 +40,7 @@ export function ProConComparison({ productName, pros, cons, imageUrl }: ProConCo
               <X className="w-5 h-5 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-orange-600" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Минусы
+              Cons
             </h3>
           </div>
           <ul className="space-y-3">

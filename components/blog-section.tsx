@@ -41,7 +41,7 @@ export function BlogPost({ title, category, excerpt, color, badge, link = '#' }:
           {excerpt}
         </p>
         <div className="flex items-center text-primary font-bold text-sm group-hover:gap-2 gap-1 transition">
-          Читать далее
+          Read More
           <ArrowRight className="w-4 h-4" />
         </div>
       </div>
@@ -54,35 +54,35 @@ export function BlogPost({ title, category, excerpt, color, badge, link = '#' }:
 export function BlogSection() {
   const posts = [
     {
-      title: 'Полное руководство по выбору чехла для смартфона',
-      category: 'Гайд',
-      excerpt: 'Разбираемся, какой чехол выбрать в зависимости от ваших потребностей и образа жизни.',
+      title: 'Complete Guide to Choosing a Phone Case',
+      category: 'Guide',
+      excerpt: 'Learn how to choose the best phone case based on your needs and lifestyle.',
       color: 'from-purple-500',
-      badge: '📚 Гайд',
+      badge: '📚 Guide',
       link: '/guide'
     },
     {
-      title: 'Тест падения: какой материал выживает лучше всего?',
-      category: 'Тесты',
-      excerpt: 'Мы сбросили все типы чехлов с высоты 2 метров и сравнили результаты.',
+      title: 'Drop Test: Which Material Survives Best?',
+      category: 'Tests',
+      excerpt: 'We dropped every type of case from 6 feet high and compared the results.',
       color: 'from-orange-500',
-      badge: '🔬 Тест',
+      badge: '🔬 Test',
       link: '/comparison'
     },
     {
-      title: 'Экологичные альтернативы традиционным чехлам',
-      category: 'Обзоры',
-      excerpt: 'Инновационные материалы, которые защищают ваш телефон и планету.',
+      title: 'Eco-Friendly Alternatives to Traditional Cases',
+      category: 'Reviews',
+      excerpt: 'Innovative materials that protect your phone and the planet.',
       color: 'from-green-500',
-      badge: '🌍 Эко',
+      badge: '🌍 Eco',
       link: '/guide'
     },
     {
-      title: 'Сравнение: Кожа vs Синтетика vs Силикон',
-      category: 'Сравнения',
-      excerpt: 'Подробный анализ трёх популярных материалов с реальными примерами.',
+      title: 'Comparison: Leather vs Synthetic vs Silicone',
+      category: 'Comparisons',
+      excerpt: 'Detailed analysis of three popular materials with real examples.',
       color: 'from-blue-500',
-      badge: '⚔️ Битва',
+      badge: '⚔️ Battle',
       link: '/comparison'
     },
   ]
@@ -93,12 +93,12 @@ export function BlogSection() {
         {/* Section Header */}
         <div className="mb-12">
           <span className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-bold mb-4">
-            📰 Последние материалы
+            📰 Latest Articles
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            Разбираемся в<br />
+            Going Deep<br />
             <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
-              деталях
+              Into Details
             </span>
           </h2>
         </div>

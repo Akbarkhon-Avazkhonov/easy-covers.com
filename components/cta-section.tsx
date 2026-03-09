@@ -10,20 +10,20 @@ export function CTASection() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
-              Не пропусти новые сравнения
+              Don't Miss New Comparisons
             </span>
           </h2>
           <p className="text-muted-foreground mb-8">
-            Подпишись на нашу рассылку и получай все новые материалы прямо на почту
+            Subscribe to our newsletter and get all new articles right to your inbox
           </p>
 
           <div className="flex gap-2 max-w-md mx-auto">
             <input
               type="email"
-              placeholder="твоя@почта.com"
+              placeholder="your@email.com"
               className="flex-1 px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:border-primary transition"
             />
-            <Button className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600">
+            <Button className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-shadow">
               <Mail className="w-4 h-4" />
             </Button>
           </div>
