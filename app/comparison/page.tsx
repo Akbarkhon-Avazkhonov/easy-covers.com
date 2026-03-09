@@ -3,6 +3,7 @@ import { Footer } from '@/components/footer'
 import { Card } from '@/components/ui/card'
 import { ArrowRight, Star, Clock, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const comparisons = [
   {
@@ -13,12 +14,12 @@ const comparisons = [
     rating: 4.8,
     readTime: '6 min read',
     trending: true,
-    leftEmoji: '🧥',
-    rightEmoji: '🏰',
+    leftImg: '/images/cards/leather-case.jpg',
+    rightImg: '/images/cards/silicone-case.jpg',
     leftName: 'Leather',
     rightName: 'Silicone',
-    leftColor: 'from-amber-400 to-orange-500',
-    rightColor: 'from-cyan-400 to-blue-500',
+    leftBg: 'bg-amber-50',
+    rightBg: 'bg-cyan-50',
     excerpt: 'We tested both materials for durability, grip, style and value. Find out which one suits your lifestyle.',
   },
   {
@@ -29,12 +30,12 @@ const comparisons = [
     rating: 4.9,
     readTime: '9 min read',
     trending: true,
-    leftEmoji: '🍎',
-    rightEmoji: '🌟',
+    leftImg: '/images/cards/iphone.jpg',
+    rightImg: '/images/cards/samsung.jpg',
     leftName: 'iPhone 16',
     rightName: 'Galaxy S25',
-    leftColor: 'from-gray-500 to-gray-700',
-    rightColor: 'from-blue-500 to-indigo-600',
+    leftBg: 'bg-gray-50',
+    rightBg: 'bg-blue-50',
     excerpt: 'Camera, battery, software, price — we go head-to-head on every spec that actually matters.',
   },
   {
@@ -45,12 +46,12 @@ const comparisons = [
     rating: 4.5,
     readTime: '5 min read',
     trending: false,
-    leftEmoji: '🛡️',
-    rightEmoji: '💎',
+    leftImg: '/images/cards/tpu-case.jpg',
+    rightImg: '/images/cards/poly-case.jpg',
     leftName: 'TPU',
     rightName: 'Polycarbonate',
-    leftColor: 'from-purple-400 to-purple-600',
-    rightColor: 'from-pink-400 to-rose-500',
+    leftBg: 'bg-purple-50',
+    rightBg: 'bg-pink-50',
     excerpt: 'Two affordable materials, completely different experiences. We break down the key differences.',
   },
   {
@@ -61,12 +62,12 @@ const comparisons = [
     rating: 4.7,
     readTime: '7 min read',
     trending: false,
-    leftEmoji: '🎧',
-    rightEmoji: '🎵',
+    leftImg: '/images/cards/airpods.jpg',
+    rightImg: '/images/cards/galaxy-buds.jpg',
     leftName: 'AirPods Pro',
     rightName: 'Galaxy Buds',
-    leftColor: 'from-white to-gray-200',
-    rightColor: 'from-violet-400 to-purple-600',
+    leftBg: 'bg-gray-50',
+    rightBg: 'bg-violet-50',
     excerpt: 'Noise cancellation, fit, audio quality and battery life — every metric tested side by side.',
   },
   {
@@ -77,12 +78,12 @@ const comparisons = [
     rating: 4.3,
     readTime: '4 min read',
     trending: false,
-    leftEmoji: '🔋',
-    rightEmoji: '⚡',
+    leftImg: '/images/cards/magsafe.jpg',
+    rightImg: '/images/cards/qi-charger.jpg',
     leftName: 'MagSafe',
     rightName: 'Qi Wireless',
-    leftColor: 'from-orange-400 to-orange-600',
-    rightColor: 'from-yellow-400 to-amber-500',
+    leftBg: 'bg-orange-50',
+    rightBg: 'bg-yellow-50',
     excerpt: 'Speed, convenience and compatibility — everything you need to know before investing.',
   },
   {
@@ -93,12 +94,12 @@ const comparisons = [
     rating: 4.6,
     readTime: '5 min read',
     trending: false,
-    leftEmoji: '🪟',
-    rightEmoji: '📱',
+    leftImg: '/images/cards/tempered-glass.jpg',
+    rightImg: '/images/cards/plastic-film.jpg',
     leftName: 'Tempered Glass',
     rightName: 'Plastic Film',
-    leftColor: 'from-sky-400 to-cyan-500',
-    rightColor: 'from-green-400 to-emerald-500',
+    leftBg: 'bg-sky-50',
+    rightBg: 'bg-green-50',
     excerpt: 'Clarity, touch sensitivity and drop resistance — which protector is actually worth buying?',
   },
 ]
@@ -170,16 +171,20 @@ export default function ComparisonsPage() {
                 <Link key={item.slug} href={`/comparison/${item.slug}`}>
                   <Card className="group overflow-hidden border-2 hover:border-primary hover:shadow-xl transition-all duration-300 cursor-pointer">
                     {/* VS Visual */}
-                    <div className="grid grid-cols-2 h-32">
-                      <div className={`bg-gradient-to-br ${item.leftColor} flex flex-col items-center justify-center gap-1`}>
-                        <span className="text-3xl">{item.leftEmoji}</span>
-                        <span className="text-white text-xs font-bold">{item.leftName}</span>
+                    <div className="grid grid-cols-2 h-40 relative">
+                      <div className={`${item.leftBg} flex flex-col items-center justify-center gap-2 overflow-hidden`}>
+                        <div className="relative w-24 h-24">
+                          <Image src={item.leftImg} alt={item.leftName} fill className="object-contain" />
+                        </div>
+                        <span className="text-xs font-bold text-foreground/70">{item.leftName}</span>
                       </div>
-                      <div className={`bg-gradient-to-br ${item.rightColor} flex flex-col items-center justify-center gap-1`}>
-                        <span className="text-3xl">{item.rightEmoji}</span>
-                        <span className="text-white text-xs font-bold">{item.rightName}</span>
+                      <div className={`${item.rightBg} flex flex-col items-center justify-center gap-2 overflow-hidden`}>
+                        <div className="relative w-24 h-24">
+                          <Image src={item.rightImg} alt={item.rightName} fill className="object-contain" />
+                        </div>
+                        <span className="text-xs font-bold text-foreground/70">{item.rightName}</span>
                       </div>
-                      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-32 flex items-center">
+                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                         <div className="bg-background border-2 border-primary rounded-full w-10 h-10 flex items-center justify-center font-black text-primary text-sm shadow-lg">
                           VS
                         </div>
@@ -224,16 +229,20 @@ export default function ComparisonsPage() {
                 <Link key={item.slug} href={`/comparison/${item.slug}`}>
                   <Card className="group overflow-hidden border-2 hover:border-primary hover:shadow-lg transition-all duration-300 cursor-pointer h-full flex flex-col">
                     {/* VS Visual compact */}
-                    <div className="grid grid-cols-2 h-24">
-                      <div className={`bg-gradient-to-br ${item.leftColor} flex flex-col items-center justify-center gap-1`}>
-                        <span className="text-2xl">{item.leftEmoji}</span>
-                        <span className="text-white text-xs font-semibold">{item.leftName}</span>
+                    <div className="grid grid-cols-2 h-32 relative">
+                      <div className={`${item.leftBg} flex flex-col items-center justify-center gap-1 overflow-hidden`}>
+                        <div className="relative w-16 h-16">
+                          <Image src={item.leftImg} alt={item.leftName} fill className="object-contain" />
+                        </div>
+                        <span className="text-xs font-semibold text-foreground/60">{item.leftName}</span>
                       </div>
-                      <div className={`bg-gradient-to-br ${item.rightColor} flex flex-col items-center justify-center gap-1`}>
-                        <span className="text-2xl">{item.rightEmoji}</span>
-                        <span className="text-white text-xs font-semibold">{item.rightName}</span>
+                      <div className={`${item.rightBg} flex flex-col items-center justify-center gap-1 overflow-hidden`}>
+                        <div className="relative w-16 h-16">
+                          <Image src={item.rightImg} alt={item.rightName} fill className="object-contain" />
+                        </div>
+                        <span className="text-xs font-semibold text-foreground/60">{item.rightName}</span>
                       </div>
-                      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-24 flex items-center">
+                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                         <div className="bg-background border-2 border-border rounded-full w-8 h-8 flex items-center justify-center font-black text-foreground text-xs shadow">
                           VS
                         </div>
