@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { Card } from '@/components/ui/card'
@@ -9,6 +12,15 @@ import { comparisons } from '@/lib/comparisons-data'
 const categories = ['All', 'Phone Cases', 'Smartphones', 'Audio', 'Accessories']
 
 export default function ComparisonsPage() {
+  const [activeCategory, setActiveCategory] = useState('All')
+
+  const filtered = activeCategory === 'All'
+    ? comparisons
+    : comparisons.filter((c) => c.category === activeCategory)
+
+  const trendingFiltered = filtered.filter((c) => c.trending)
+  const restFiltered = filtered.filter((c) => !c.trending)
+
   return (
     <main className="min-h-screen bg-background">
       <Header />
@@ -43,8 +55,9 @@ export default function ComparisonsPage() {
             {categories.map((cat) => (
               <button
                 key={cat}
+                onClick={() => setActiveCategory(cat)}
                 className={`shrink-0 px-4 py-1.5 rounded-full text-sm font-medium border transition-all ${
-                  cat === 'All'
+                  activeCategory === cat
                     ? 'bg-primary text-primary-foreground border-primary'
                     : 'border-border text-muted-foreground hover:border-primary hover:text-primary'
                 }`}
@@ -61,6 +74,7 @@ export default function ComparisonsPage() {
         <div className="container mx-auto px-4">
 
           {/* Trending first */}
+          {trendingFiltered.length > 0 && (
           <div className="mb-10">
             <div className="flex items-center gap-2 mb-6">
               <TrendingUp className="w-5 h-5 text-orange-500" />
@@ -69,7 +83,7 @@ export default function ComparisonsPage() {
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {comparisons.filter((c) => c.trending).map((item) => (
+              {trendingFiltered.map((item) => (
                 <Link key={item.slug} href={`/comparison/${item.slug}`}>
                   <Card className="group overflow-hidden border-2 hover:border-primary hover:shadow-xl transition-all duration-300 cursor-pointer">
                     {/* VS Visual */}
@@ -116,14 +130,16 @@ export default function ComparisonsPage() {
               ))}
             </div>
           </div>
+          )}
 
           {/* All comparisons */}
+          {restFiltered.length > 0 && (
           <div>
             <h2 className="text-xl font-bold mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              All Comparisons
+              {activeCategory === 'All' ? 'All Comparisons' : activeCategory}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {comparisons.filter((c) => !c.trending).map((item) => (
+              {restFiltered.map((item) => (
                 <Link key={item.slug} href={`/comparison/${item.slug}`}>
                   <Card className="group overflow-hidden border-2 hover:border-primary hover:shadow-lg transition-all duration-300 cursor-pointer h-full flex flex-col">
                     {/* VS Visual compact */}
@@ -170,6 +186,15 @@ export default function ComparisonsPage() {
               ))}
             </div>
           </div>
+          )}
+
+          {/* Empty state */}
+          {filtered.length === 0 && (
+            <div className="text-center py-20">
+              <p className="text-lg font-bold mb-2">No comparisons found</p>
+              <p className="text-sm text-muted-foreground">Try selecting a different category.</p>
+            </div>
+          )}
 
         </div>
       </section>
