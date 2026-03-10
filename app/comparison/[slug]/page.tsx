@@ -3,7 +3,7 @@ import { comparisons } from '@/lib/comparisons-data'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { Card } from '@/components/ui/card'
-import { ArrowLeft, Star, Clock, CheckCircle, XCircle } from 'lucide-react'
+import { ArrowLeft, Star, Clock, CheckCircle, XCircle, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -138,7 +138,7 @@ export default async function ComparisonArticlePage({
                   </li>
                 ))}
               </ul>
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {item.leftCons.map((con) => (
                   <li key={con} className="flex items-start gap-2 text-sm">
                     <XCircle className="w-4 h-4 text-red-400 mt-0.5 shrink-0" />
@@ -146,6 +146,15 @@ export default async function ComparisonArticlePage({
                   </li>
                 ))}
               </ul>
+              <a
+                href={item.leftAmazonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-[#FF9900] hover:bg-[#e88a00] text-white text-sm font-bold transition-colors"
+              >
+                <ShoppingCart className="w-4 h-4" />
+                Buy on Amazon
+              </a>
             </Card>
 
             {/* Right */}
@@ -164,7 +173,7 @@ export default async function ComparisonArticlePage({
                   </li>
                 ))}
               </ul>
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {item.rightCons.map((con) => (
                   <li key={con} className="flex items-start gap-2 text-sm">
                     <XCircle className="w-4 h-4 text-red-400 mt-0.5 shrink-0" />
@@ -172,6 +181,15 @@ export default async function ComparisonArticlePage({
                   </li>
                 ))}
               </ul>
+              <a
+                href={item.rightAmazonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-[#FF9900] hover:bg-[#e88a00] text-white text-sm font-bold transition-colors"
+              >
+                <ShoppingCart className="w-4 h-4" />
+                Buy on Amazon
+              </a>
             </Card>
           </div>
         </div>

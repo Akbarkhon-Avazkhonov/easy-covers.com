@@ -22,6 +22,8 @@ export interface ComparisonData {
   verdict: string
   leftScore: number
   rightScore: number
+  leftAmazonUrl: string
+  rightAmazonUrl: string
 }
 
 export const comparisons: ComparisonData[] = [
@@ -56,6 +58,8 @@ export const comparisons: ComparisonData[] = [
     verdict: 'Leather wins for anyone who treats their phone as an extension of their personal style and is willing to invest. Silicone wins for practical, budget-conscious users who just want hassle-free daily protection. Neither is universally better — your lifestyle decides.',
     leftScore: 83,
     rightScore: 71,
+    leftAmazonUrl: 'https://www.amazon.com/s?k=leather+phone+case',
+    rightAmazonUrl: 'https://www.amazon.com/s?k=silicone+phone+case',
   },
   {
     slug: 'iphone-vs-android',
@@ -88,6 +92,8 @@ export const comparisons: ComparisonData[] = [
     verdict: 'The iPhone 16 is the better long-term investment thanks to longer software support and superior resale value. The Galaxy S25 wins on charging speed, specs per dollar, and flexibility. If you are already in either ecosystem, stay — switching costs outweigh the differences.',
     leftScore: 91,
     rightScore: 87,
+    leftAmazonUrl: 'https://www.amazon.com/s?k=iphone+16',
+    rightAmazonUrl: 'https://www.amazon.com/s?k=samsung+galaxy+s25',
   },
   {
     slug: 'tpu-vs-polycarbonate',
@@ -120,6 +126,8 @@ export const comparisons: ComparisonData[] = [
     verdict: 'For drop protection, TPU is the clear winner. For a slim, scratch-resistant look, polycarbonate is better. The ideal solution — used by most premium budget brands — is a hybrid combining both materials.',
     leftScore: 76,
     rightScore: 68,
+    leftAmazonUrl: 'https://www.amazon.com/s?k=tpu+phone+case',
+    rightAmazonUrl: 'https://www.amazon.com/s?k=polycarbonate+phone+case',
   },
   {
     slug: 'airpods-vs-galaxy-buds',
@@ -152,6 +160,8 @@ export const comparisons: ComparisonData[] = [
     verdict: 'iPhone users should buy AirPods Pro without hesitation — the integration is unmatched. Android and multi-device users get more value from Galaxy Buds Pro thanks to better audio, longer battery, and broader compatibility.',
     leftScore: 85,
     rightScore: 82,
+    leftAmazonUrl: 'https://www.amazon.com/s?k=airpods+pro',
+    rightAmazonUrl: 'https://www.amazon.com/s?k=samsung+galaxy+buds',
   },
   {
     slug: 'magsafe-vs-wireless',
@@ -184,6 +194,8 @@ export const comparisons: ComparisonData[] = [
     verdict: 'MagSafe is the better experience for iPhone users who appreciate the magnetic convenience and accessory ecosystem. For Android users or anyone wanting a budget-friendly universal option, a good Qi pad gets the job done at a fraction of the cost.',
     leftScore: 79,
     rightScore: 72,
+    leftAmazonUrl: 'https://www.amazon.com/s?k=magsafe+charger',
+    rightAmazonUrl: 'https://www.amazon.com/s?k=qi+wireless+charger',
   },
   {
     slug: 'glass-vs-plastic-screen',
@@ -216,5 +228,7 @@ export const comparisons: ComparisonData[] = [
     verdict: 'Tempered glass is the right choice for 90% of users — the scratch resistance and touch experience are simply better. Plastic film is worth considering only if you have a curved-edge display or need the absolute thinnest possible protector.',
     leftScore: 88,
     rightScore: 65,
+    leftAmazonUrl: 'https://www.amazon.com/s?k=tempered+glass+screen+protector',
+    rightAmazonUrl: 'https://www.amazon.com/s?k=plastic+film+screen+protector',
   },
 ]
