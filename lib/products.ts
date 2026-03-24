@@ -170,7 +170,7 @@ export const products: Product[] = [
     "name": "Custom Embossed Leather",
     "category": "Premium Materials",
     "amazonUrl": "https://www.amazon.com/dp/B0CLJS22XD",
-    "image": "/images/cards/leather-case.jpg",
+    "image": "https://m.media-amazon.com/images/I/61uIfdq7yVL._AC_SX679_.jpg",
     "keyFeatures": [
       "Custom Monogram",
       "Genuine Premium Leather",
