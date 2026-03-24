@@ -1,234 +1,527 @@
 export interface ComparisonData {
-  slug: string
-  title: string
-  subtitle: string
-  category: string
-  rating: number
-  readTime: string
-  trending: boolean
-  leftImg: string
-  rightImg: string
-  leftName: string
-  rightName: string
-  leftBg: string
-  rightBg: string
-  excerpt: string
-  intro: string
-  leftPros: string[]
-  leftCons: string[]
-  rightPros: string[]
-  rightCons: string[]
-  specs: { label: string; left: string; right: string }[]
-  verdict: string
-  leftScore: number
-  rightScore: number
-  leftAmazonUrl: string
-  rightAmazonUrl: string
+  slug: string;
+  title: string;
+  subtitle: string;
+  category: string;
+  rating: number;
+  readTime: string;
+  trending: boolean;
+  leftImg: string;
+  rightImg: string;
+  leftName: string;
+  rightName: string;
+  leftBg: string;
+  rightBg: string;
+  excerpt: string;
+  intro: string;
+  leftPros: string[];
+  leftCons: string[];
+  rightPros: string[];
+  rightCons: string[];
+  specs: { label: string; left: string; right: string }[];
+  verdict: string;
+  leftScore: number;
+  rightScore: number;
+  leftAmazonUrl: string;
+  rightAmazonUrl: string;
 }
 
 export const comparisons: ComparisonData[] = [
   {
-    slug: 'leather-vs-silicone',
-    title: 'Leather vs Silicone',
-    subtitle: 'Which phone case material wins in 2026?',
-    category: 'Phone Cases',
-    rating: 4.8,
-    readTime: '6 min read',
-    trending: true,
-    leftImg: '/images/cards/leather-case.jpg',
-    rightImg: '/images/cards/silicone-case.jpg',
-    leftName: 'Leather',
-    rightName: 'Silicone',
-    leftBg: 'bg-amber-50',
-    rightBg: 'bg-cyan-50',
-    excerpt: 'We tested both materials for durability, grip, style and value. Find out which one suits your lifestyle.',
-    intro: 'When it comes to protecting your smartphone, choosing the right case material is one of the most important decisions you can make. Leather and silicone are the two most popular choices on the market — and they represent very different philosophies. Leather is the choice of those who value premium craftsmanship and long-term beauty. Silicone is the practical, everyday solution that just gets the job done. We spent four weeks using both types in real-world conditions so you can skip the guesswork.',
-    leftPros: ['Premium feel and appearance', 'Improves with age — develops patina', 'Excellent grip on smooth surfaces', 'Breathable — phone stays cooler', 'Very durable with proper care'],
-    leftCons: ['Expensive ($50–$100+)', 'Requires occasional conditioning', 'Sensitive to moisture and sweat', 'Can transfer dye to light clothing'],
-    rightPros: ['Affordable ($10–$25)', 'Extremely easy to clean', 'Excellent shock absorption', 'Huge variety of colors', 'Water and sweat resistant'],
-    rightCons: ['Attracts lint and dust constantly', 'Gets sticky and discolored over time', 'Looks cheap at a glance', 'Can yellowing under UV exposure'],
-    specs: [
-      { label: 'Price range', left: '$50–$100+', right: '$10–$25' },
-      { label: 'Drop protection', left: '4 / 5', right: '3.5 / 5' },
-      { label: 'Durability', left: '5 / 5', right: '3 / 5' },
-      { label: 'Style', left: '5 / 5', right: '2.5 / 5' },
-      { label: 'Ease of maintenance', left: '3 / 5', right: '5 / 5' },
-      { label: 'Grip quality', left: '4 / 5', right: '4.5 / 5' },
+    "slug": "spigen-tough-vs-otterbox-symmetry",
+    "title": "Spigen Tough Armor vs OtterBox Symmetry",
+    "subtitle": "Which protects better?",
+    "category": "General",
+    "rating": 7,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/71FW-IwjXmL._AC_SX425_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/513V3w2TDuL._AC_SX425_.jpg",
+    "leftName": "Spigen Tough Armor",
+    "rightName": "OtterBox Symmetry MagSafe",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "Comparing two of the absolute titans in rugged drop protection for the modern smartphone.",
+    "intro": "When it comes to wrapping your thousand-dollar device in impact-absorbing foam and rubber, Spigen and OtterBox are the undisputed kings. We took their flagship protective lines and ran them through the ringer.",
+    "leftPros": [
+      "Ultimate drop protection",
+      "Built-in kickstand",
+      "Strong magnets"
     ],
-    verdict: 'Leather wins for anyone who treats their phone as an extension of their personal style and is willing to invest. Silicone wins for practical, budget-conscious users who just want hassle-free daily protection. Neither is universally better — your lifestyle decides.',
-    leftScore: 83,
-    rightScore: 71,
-    leftAmazonUrl: 'https://www.amazon.com/s?k=leather+phone+case',
-    rightAmazonUrl: 'https://www.amazon.com/s?k=silicone+phone+case',
+    "leftCons": [
+      "Slightly bulky",
+      "Design is very industrial"
+    ],
+    "rightPros": [
+      "Best-in-class clear coat",
+      "Very protective",
+      "Lifetime warranty"
+    ],
+    "rightCons": [
+      "Expensive",
+      "Buttons are extremely stiff initially"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Rugged Cases",
+        "right": "Clear Cases"
+      },
+      {
+        "label": "Key Feature",
+        "left": "Extreme Impact Foam",
+        "right": "Anti-Yellowing Tech"
+      },
+      {
+        "label": "Secondary",
+        "left": "MagSafe Compatible",
+        "right": "Flawless MagSafe"
+      },
+      {
+        "label": "Downside",
+        "left": "Slightly bulky",
+        "right": "Expensive"
+      }
+    ],
+    "verdict": "Both the Spigen Tough Armor and the OtterBox Symmetry MagSafe provide excellent value, but they serve different users. If ultimate drop protection is your main priority, go with Spigen Tough Armor. If you care more about best-in-class clear coat, OtterBox Symmetry MagSafe is the superior choice.",
+    "leftScore": 92,
+    "rightScore": 89,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0G2T9SG37",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B0CGCH8223"
   },
   {
-    slug: 'iphone-vs-android',
-    title: 'iPhone 16 vs Samsung S25',
-    subtitle: 'The ultimate 2026 smartphone showdown',
-    category: 'Smartphones',
-    rating: 4.9,
-    readTime: '9 min read',
-    trending: true,
-    leftImg: '/images/cards/iphone.jpg',
-    rightImg: '/images/cards/samsung.jpg',
-    leftName: 'iPhone 16',
-    rightName: 'Galaxy S25',
-    leftBg: 'bg-gray-50',
-    rightBg: 'bg-blue-50',
-    excerpt: 'Camera, battery, software, price — we go head-to-head on every spec that actually matters.',
-    intro: 'The iPhone vs Android debate has never been more competitive. In 2026, both Apple and Samsung are producing genuinely excellent devices that do most things brilliantly. The real differences come down to ecosystem, software philosophy, and the fine details of camera processing. We tested both flagships across six weeks of daily use to give you the clearest picture possible.',
-    leftPros: ['Best-in-class software consistency', 'Outstanding video recording', 'Longest software support (6+ years)', 'Tight hardware and software integration', 'Best resale value'],
-    leftCons: ['Expensive ($999+)', 'Less customization freedom', 'USB-C still lags in speed vs Android', 'No expandable storage'],
-    rightPros: ['More customizable Android experience', 'Faster charging (45W)', 'Expandable storage option', 'Better price-to-spec ratio', 'More versatile camera zoom range'],
-    rightCons: ['Software updates end at 4 years', 'Inconsistent third-party app quality', 'Lower resale value', 'Bloatware on some models'],
-    specs: [
-      { label: 'Starting price', left: '$999', right: '$899' },
-      { label: 'Camera score', left: '97 / 100', right: '95 / 100' },
-      { label: 'Battery life', left: '22 hrs', right: '26 hrs' },
-      { label: 'Software updates', left: '6+ years', right: '4 years' },
-      { label: 'Charging speed', left: '27W', right: '45W' },
-      { label: 'Resale value (1yr)', left: '75%', right: '55%' },
+    "slug": "apple-finewoven-vs-elago-magnetic",
+    "title": "Apple FineWoven vs elago Magnetic Silicone",
+    "subtitle": "Premium vs Budget",
+    "category": "General",
+    "rating": 6.5,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/51yjgy8YEtL._AC_SX342_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/61FPaOmwK5L._AC_SX425_.jpg",
+    "leftName": "Apple FineWoven Case",
+    "rightName": "elago Magnetic Silicone",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "Can a $20 silicone case beat Apple's official premium alternative?",
+    "intro": "Apple's transition away from leather brought us FineWoven, a microtwill material that has divided opinions. Meanwhile, third-party manufacturers like elago continue to perfect the classic silicone formula. Which gives you the better daily experience?",
+    "leftPros": [
+      "Incredibly soft texture",
+      "68% post-consumer content",
+      "Official Apple colors"
     ],
-    verdict: 'The iPhone 16 is the better long-term investment thanks to longer software support and superior resale value. The Galaxy S25 wins on charging speed, specs per dollar, and flexibility. If you are already in either ecosystem, stay — switching costs outweigh the differences.',
-    leftScore: 91,
-    rightScore: 87,
-    leftAmazonUrl: 'https://www.amazon.com/s?k=iphone+16',
-    rightAmazonUrl: 'https://www.amazon.com/s?k=samsung+galaxy+s25',
+    "leftCons": [
+      "Shows scuffs permanently",
+      "Not water resistant"
+    ],
+    "rightPros": [
+      "Feels just like official case",
+      "Great color options",
+      "Strong magnet"
+    ],
+    "rightCons": [
+      "Attracts lint in pocket",
+      "Can peel at edges over time"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Premium Materials",
+        "right": "Silicone Cases"
+      },
+      {
+        "label": "Key Feature",
+        "left": "Microtwill Fabric",
+        "right": "Liquid Silicone"
+      },
+      {
+        "label": "Secondary",
+        "left": "Exact Apple Fit",
+        "right": "Microfiber Lining"
+      },
+      {
+        "label": "Downside",
+        "left": "Shows scuffs permanently",
+        "right": "Attracts lint in pocket"
+      }
+    ],
+    "verdict": "Both the Apple FineWoven Case and the elago Magnetic Silicone provide excellent value, but they serve different users. If incredibly soft texture is your main priority, go with Apple FineWoven Case. If you care more about feels just like official case, elago Magnetic Silicone is the superior choice.",
+    "leftScore": 75,
+    "rightScore": 87,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0CHWV7J2W",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B0F5PWNWDF"
   },
   {
-    slug: 'tpu-vs-polycarbonate',
-    title: 'TPU vs Polycarbonate',
-    subtitle: 'Budget case materials put to the test',
-    category: 'Phone Cases',
-    rating: 4.5,
-    readTime: '5 min read',
-    trending: false,
-    leftImg: '/images/cards/tpu-case.jpg',
-    rightImg: '/images/cards/poly-case.jpg',
-    leftName: 'TPU',
-    rightName: 'Polycarbonate',
-    leftBg: 'bg-purple-50',
-    rightBg: 'bg-pink-50',
-    excerpt: 'Two affordable materials, completely different experiences. We break down the key differences.',
-    intro: 'TPU and polycarbonate are the backbone of the budget case market. Most cases under $20 are made from one or both of these materials — often combined into a hybrid. But used in isolation, they behave very differently. We tested a selection of pure TPU and pure polycarbonate cases across drop tests, scratch resistance, and everyday usability.',
-    leftPros: ['Excellent shock absorption', 'Flexible — easy to install and remove', 'Self-healing minor scratches', 'Good grip texture', 'Affordable ($8–$18)'],
-    leftCons: ['Can yellow over time', 'Attracts oils from hands', 'Less rigid — less precise fit', 'Not ideal for slim profiles'],
-    rightPros: ['Very slim and lightweight', 'Scratch resistant surface', 'Maintains color better long-term', 'Precise fit', 'Affordable ($6–$15)'],
-    rightCons: ['Brittle — can crack on hard drops', 'Slippery surface', 'Poor shock absorption alone', 'Harder to install'],
-    specs: [
-      { label: 'Price range', left: '$8–$18', right: '$6–$15' },
-      { label: 'Drop protection', left: '4 / 5', right: '2.5 / 5' },
-      { label: 'Scratch resistance', left: '3 / 5', right: '4.5 / 5' },
-      { label: 'Flexibility', left: '5 / 5', right: '1 / 5' },
-      { label: 'Slim profile', left: '2.5 / 5', right: '5 / 5' },
-      { label: 'Longevity', left: '3.5 / 5', right: '4 / 5' },
+    "slug": "zagg-invisible-shield-vs-mothca",
+    "title": "ZAGG Invisible Shield vs Mothca Anti-Glare",
+    "subtitle": "Screen Protector Battle",
+    "category": "Screen Protectors",
+    "rating": 6.9,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/61ZCbDXNRIL._AC_SX425_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/619rlgl2rzL._AC_SX425_.jpg",
+    "leftName": "ZAGG Invisible Shield",
+    "rightName": "Mothca Anti-Glare Glass",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "High-end diamond-strength glass meets premium matte anti-glare finish.",
+    "intro": "Protecting your screen is mandatory, but how you protect it is a matter of preference. Do you want flawless optical clarity with ZAGG, or the silky smooth gaming glide of Mothca's matte tempered glass?",
+    "leftPros": [
+      "Extremely strong glass",
+      "Lifetime replacements",
+      "Flawless touch sensitivity"
     ],
-    verdict: 'For drop protection, TPU is the clear winner. For a slim, scratch-resistant look, polycarbonate is better. The ideal solution — used by most premium budget brands — is a hybrid combining both materials.',
-    leftScore: 76,
-    rightScore: 68,
-    leftAmazonUrl: 'https://www.amazon.com/s?k=tpu+phone+case',
-    rightAmazonUrl: 'https://www.amazon.com/s?k=polycarbonate+phone+case',
+    "leftCons": [
+      "Very expensive",
+      "Installation requires patience"
+    ],
+    "rightPros": [
+      "Zero glare in sunlight",
+      "Feels amazing for gaming/swiping",
+      "No smudges"
+    ],
+    "rightCons": [
+      "Reduces screen sharpness slightly",
+      "Adds a grainy texture to whites"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Screen Protectors",
+        "right": "Screen Protectors"
+      },
+      {
+        "label": "Key Feature",
+        "left": "Glass Elite",
+        "right": "Matte Finish"
+      },
+      {
+        "label": "Secondary",
+        "left": "Anti-Microbial",
+        "right": "Anti-Fingerprint"
+      },
+      {
+        "label": "Downside",
+        "left": "Very expensive",
+        "right": "Reduces screen sharpness slightly"
+      }
+    ],
+    "verdict": "Both the ZAGG Invisible Shield and the Mothca Anti-Glare Glass provide excellent value, but they serve different users. If extremely strong glass is your main priority, go with ZAGG Invisible Shield. If you care more about zero glare in sunlight, Mothca Anti-Glare Glass is the superior choice.",
+    "leftScore": 91,
+    "rightScore": 86,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0B9DPN186",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B0B96P3Y77"
   },
   {
-    slug: 'airpods-vs-galaxy-buds',
-    title: 'AirPods Pro vs Galaxy Buds',
-    subtitle: 'Premium wireless earbuds compared',
-    category: 'Audio',
-    rating: 4.7,
-    readTime: '7 min read',
-    trending: false,
-    leftImg: '/images/cards/airpods.jpg',
-    rightImg: '/images/cards/galaxy-buds.jpg',
-    leftName: 'AirPods Pro',
-    rightName: 'Galaxy Buds',
-    leftBg: 'bg-gray-50',
-    rightBg: 'bg-violet-50',
-    excerpt: 'Noise cancellation, fit, audio quality and battery life — every metric tested side by side.',
-    intro: 'The premium wireless earbud market has two dominant players: Apple AirPods Pro 2 and Samsung Galaxy Buds 3 Pro. Both cost over $200 and both promise exceptional sound and noise cancellation. But they each cater to different ecosystems and listening philosophies. We wore both pairs for three weeks across commutes, gym sessions, and work calls.',
-    leftPros: ['Best ANC on the market', 'Seamless Apple device integration', 'Excellent transparency mode', 'H2 chip for low latency', 'IPX4 water resistance'],
-    leftCons: ['Expensive ($249)', 'Mediocre with non-Apple devices', 'Average battery (6 hrs)', 'Stem design divides opinion'],
-    rightPros: ['Better audio tuning for music', 'Works great across all devices', 'Longer battery life (8 hrs)', 'More comfortable for long sessions', 'Competitive price ($199)'],
-    rightCons: ['ANC not as strong as AirPods', 'Best features require Samsung phone', 'Fit less secure during sports', 'Occasional Bluetooth stutters'],
-    specs: [
-      { label: 'Price', left: '$249', right: '$199' },
-      { label: 'Battery (buds)', left: '6 hours', right: '8 hours' },
-      { label: 'ANC strength', left: '5 / 5', right: '4 / 5' },
-      { label: 'Audio quality', left: '4 / 5', right: '4.5 / 5' },
-      { label: 'Cross-device support', left: '2 / 5', right: '4.5 / 5' },
-      { label: 'Comfort', left: '4 / 5', right: '4.5 / 5' },
+    "slug": "anker-magsafe-vs-verbatim",
+    "title": "Anker MagSafe Power Bank vs Verbatim Essential Power",
+    "subtitle": "The Ultimate Wireless Battery Showdown",
+    "category": "Magnetic Power Banks",
+    "rating": 6.9,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/51yCHZ3+xfL._AC_SX425_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/61m-ixXxIeL._AC_SY355_.jpg",
+    "leftName": "Anker Ultra-Slim MagSafe",
+    "rightName": "Verbatim Essential Power",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "Slim design versus massive capacity in the world of magnetic portable chargers.",
+    "intro": "Snapping a battery pack to the back of your phone is the most convenient way to juice up on the go. Anker offers a premium, ultra-slim 5000mAh solution, while Verbatim brings a massive 10000mAh brick. We tested charging speeds, heat, and practical portability.",
+    "leftPros": [
+      "Perfectly snaps to iPhone",
+      "Does not block camera",
+      "Premium Anker build quality"
     ],
-    verdict: 'iPhone users should buy AirPods Pro without hesitation — the integration is unmatched. Android and multi-device users get more value from Galaxy Buds Pro thanks to better audio, longer battery, and broader compatibility.',
-    leftScore: 85,
-    rightScore: 82,
-    leftAmazonUrl: 'https://www.amazon.com/s?k=airpods+pro',
-    rightAmazonUrl: 'https://www.amazon.com/s?k=samsung+galaxy+buds',
+    "leftCons": [
+      "5000mAh only gives 80% charge",
+      "Charging speed maxes at 7.5W"
+    ],
+    "rightPros": [
+      "Double the battery life",
+      "Exact percentage display",
+      "Affordable"
+    ],
+    "rightCons": [
+      "Very thick and heavy",
+      "Magnets are weaker than Anker"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Magnetic Power Banks",
+        "right": "Magnetic Power Banks"
+      },
+      {
+        "label": "Key Feature",
+        "left": "5000mAh Capacity",
+        "right": "10000mAh Capacity"
+      },
+      {
+        "label": "Secondary",
+        "left": "Ultra Slim Profile",
+        "right": "Digital Display"
+      },
+      {
+        "label": "Downside",
+        "left": "5000mAh only gives 80% charge",
+        "right": "Very thick and heavy"
+      }
+    ],
+    "verdict": "Both the Anker Ultra-Slim MagSafe and the Verbatim Essential Power provide excellent value, but they serve different users. If perfectly snaps to iphone is your main priority, go with Anker Ultra-Slim MagSafe. If you care more about double the battery life, Verbatim Essential Power is the superior choice.",
+    "leftScore": 92,
+    "rightScore": 83,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0F8HXYD46",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B0F2MHKVSZ"
   },
   {
-    slug: 'magsafe-vs-wireless',
-    title: 'MagSafe vs Wireless Charging',
-    subtitle: 'Which charging method is actually better?',
-    category: 'Accessories',
-    rating: 4.3,
-    readTime: '4 min read',
-    trending: false,
-    leftImg: '/images/cards/magsafe.jpg',
-    rightImg: '/images/cards/qi-charger.jpg',
-    leftName: 'MagSafe',
-    rightName: 'Qi Wireless',
-    leftBg: 'bg-orange-50',
-    rightBg: 'bg-yellow-50',
-    excerpt: 'Speed, convenience and compatibility — everything you need to know before investing.',
-    intro: 'Wireless charging has been around for years, but Apple MagSafe introduced a new standard: magnetically aligned, faster, and smarter. But is the premium worth it over standard Qi? We ran both through real-world charging tests over two weeks to measure speed, heat generation, and convenience.',
-    leftPros: ['Faster 15W charging for iPhones', 'Magnetic alignment — no misplacement', 'Enables accessories like wallets and mounts', 'Clean snap-on connection', 'Compact puck design'],
-    leftCons: ['iPhone-only at 15W', 'Expensive ($39–$45)', 'Slower than wired charging', 'Gets warm during charging'],
-    rightPros: ['Universal — works with any Qi device', 'Affordable ($10–$25)', 'Wide pad sizes available', 'Can charge multiple devices (some pads)', 'No ecosystem lock-in'],
-    rightCons: ['Slower 5–10W for most phones', 'Easy to misalign — charging fails silently', 'More heat generated', 'No accessory ecosystem'],
-    specs: [
-      { label: 'Max charging speed', left: '15W (iPhone)', right: '5–15W (varies)' },
-      { label: 'Price', left: '$39–$45', right: '$10–$25' },
-      { label: 'Compatibility', left: 'iPhone 12+ only', right: 'All Qi devices' },
-      { label: 'Alignment accuracy', left: '5 / 5', right: '2.5 / 5' },
-      { label: 'Heat generation', left: 'Low', right: 'Moderate' },
-      { label: 'Accessory ecosystem', left: '5 / 5', right: '1 / 5' },
+    "slug": "spigen-armor-s24-vs-spigen-classic",
+    "title": "Spigen Armor Galaxy S24 Ultra vs Spigen Classic Galaxy",
+    "subtitle": "The Samsung Choice",
+    "category": "Rugged Cases",
+    "rating": 6.9,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/61BmQzaTQkL._AC_SX425_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/61LUdeEY4DL._AC_SX425_.jpg",
+    "leftName": "Spigen Armor S24 Ultra",
+    "rightName": "Spigen Classic Galaxy",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "Choosing the right Spigen case for your brand new Galaxy flagship.",
+    "intro": "If you bought a Galaxy, chances are you're putting a Spigen case on it. But should you go for maximum armor and S-Pen readiness, or the stealthy, carbon-fiber textured Classic?",
+    "leftPros": [
+      "Perfect S-Pen cutout",
+      "Massive camera protection",
+      "Very durable"
     ],
-    verdict: 'MagSafe is the better experience for iPhone users who appreciate the magnetic convenience and accessory ecosystem. For Android users or anyone wanting a budget-friendly universal option, a good Qi pad gets the job done at a fraction of the cost.',
-    leftScore: 79,
-    rightScore: 72,
-    leftAmazonUrl: 'https://www.amazon.com/s?k=magsafe+charger',
-    rightAmazonUrl: 'https://www.amazon.com/s?k=qi+wireless+charger',
+    "leftCons": [
+      "Heavy",
+      "Mutes device design"
+    ],
+    "rightPros": [
+      "Slimmer than other tough cases",
+      "Stylish carbon accents",
+      "Affordable"
+    ],
+    "rightCons": [
+      "Less intense drop rating",
+      "Limited color options"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Rugged Cases",
+        "right": "Rugged Cases"
+      },
+      {
+        "label": "Key Feature",
+        "left": "S-Pen Accessibility",
+        "right": "Classic Slim Fit"
+      },
+      {
+        "label": "Secondary",
+        "left": "Dual Layer Design",
+        "right": "Carbon Fiber Texture"
+      },
+      {
+        "label": "Downside",
+        "left": "Heavy",
+        "right": "Less intense drop rating"
+      }
+    ],
+    "verdict": "Both the Spigen Armor S24 Ultra and the Spigen Classic Galaxy provide excellent value, but they serve different users. If perfect s-pen cutout is your main priority, go with Spigen Armor S24 Ultra. If you care more about slimmer than other tough cases, Spigen Classic Galaxy is the superior choice.",
+    "leftScore": 90,
+    "rightScore": 85,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0BJSFNCNJ",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B0BXFL9XBX"
   },
   {
-    slug: 'glass-vs-plastic-screen',
-    title: 'Glass vs Plastic Screen Protectors',
-    subtitle: 'Protecting your display the right way',
-    category: 'Accessories',
-    rating: 4.6,
-    readTime: '5 min read',
-    trending: false,
-    leftImg: '/images/cards/tempered-glass.jpg',
-    rightImg: '/images/cards/plastic-film.jpg',
-    leftName: 'Tempered Glass',
-    rightName: 'Plastic Film',
-    leftBg: 'bg-sky-50',
-    rightBg: 'bg-green-50',
-    excerpt: 'Clarity, touch sensitivity and drop resistance — which protector is actually worth buying?',
-    intro: 'Screen protectors are one of the most purchased phone accessories — and yet most people have no idea which type actually performs better. Tempered glass has become the default choice for most users, but high-quality plastic film still has a loyal following. We applied both to identical test devices and put them through scratch, drop, and touch sensitivity tests.',
-    leftPros: ['Superior scratch resistance', 'Crystal-clear optical clarity', 'Absorbs impact effectively', 'Easy bubble-free installation (most)', 'Natural glass feel under finger'],
-    leftCons: ['Can shatter on hard drops', 'Bulkier than film', 'Higher cost ($10–$30)', 'Harder to cut for unusual designs'],
-    rightPros: ['Ultra-thin — barely noticeable', 'Flexible — absorbs flex drops better', 'Cheaper ($3–$10)', 'Self-healing minor scratches (some)', 'Can wrap around curved edges'],
-    rightCons: ['Scratches easily from keys/sand', 'Feels less natural under finger', 'Bubbles appear over time', 'Affects touch sensitivity slightly'],
-    specs: [
-      { label: 'Price', left: '$10–$30', right: '$3–$10' },
-      { label: 'Scratch resistance', left: '5 / 5', right: '2.5 / 5' },
-      { label: 'Touch clarity', left: '5 / 5', right: '3.5 / 5' },
-      { label: 'Impact absorption', left: '4 / 5', right: '3.5 / 5' },
-      { label: 'Thinness', left: '3 / 5', right: '5 / 5' },
-      { label: 'Longevity', left: '4.5 / 5', right: '2.5 / 5' },
+    "slug": "peel-super-thin-vs-apple-clear",
+    "title": "PEEL Super Thin vs Apple Clear Case",
+    "subtitle": "Barely There Protection",
+    "category": "Ultra-Thin Cases",
+    "rating": 6.6,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/51lId8EafOL._AC_SX425_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/71X3+qBqtEL._AC_SX425_.jpg",
+    "leftName": "PEEL Super Thin",
+    "rightName": "Apple iPhone Clear",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "The thinnest opaque case against the clearest hard plastic case.",
+    "intro": "Some people hate cases. For them, there are ultra-thin shells and perfectly clear bumpers. We compare PEEL's literal paper-thin blackout case against Apple's notoriously rigid and bright clear polycarbonate case.",
+    "leftPros": [
+      "Literally feels like no case",
+      "Zero branding",
+      "Perfectly flush camera lip"
     ],
-    verdict: 'Tempered glass is the right choice for 90% of users — the scratch resistance and touch experience are simply better. Plastic film is worth considering only if you have a curved-edge display or need the absolute thinnest possible protector.',
-    leftScore: 88,
-    rightScore: 65,
-    leftAmazonUrl: 'https://www.amazon.com/s?k=tempered+glass+screen+protector',
-    rightAmazonUrl: 'https://www.amazon.com/s?k=plastic+film+screen+protector',
+    "leftCons": [
+      "Almost zero drop protection",
+      "Can stretch out over time"
+    ],
+    "rightPros": [
+      "Perfect fit and finish",
+      "Does not yellow ever",
+      "Shows phone design purely"
+    ],
+    "rightCons": [
+      "Very slippery",
+      "Bottom is exposed",
+      "Cracks if dropped on hard surface"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Ultra-Thin Cases",
+        "right": "Ultra-Thin Cases"
+      },
+      {
+        "label": "Key Feature",
+        "left": "0.33mm Thin",
+        "right": "Optical Clear Polycarbonate"
+      },
+      {
+        "label": "Secondary",
+        "left": "Branding Free",
+        "right": "Scratch Resistant Coating"
+      },
+      {
+        "label": "Downside",
+        "left": "Almost zero drop protection",
+        "right": "Very slippery"
+      }
+    ],
+    "verdict": "Both the PEEL Super Thin and the Apple iPhone Clear provide excellent value, but they serve different users. If literally feels like no case is your main priority, go with PEEL Super Thin. If you care more about perfect fit and finish, Apple iPhone Clear is the superior choice.",
+    "leftScore": 85,
+    "rightScore": 79,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0CG6VZB1T",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B0FK3QGK3X"
   },
-]
+  {
+    "slug": "wireless-station-airpods-vs-samsung-univ",
+    "title": "AirPods Charging Station vs Samsung Universal",
+    "subtitle": "Charging Ecosystems Clash",
+    "category": "Wireless Chargers",
+    "rating": 6.8,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/81zu+cSf-qL._AC_SY355_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/51w1ScBsg1L._AC_SX355_.jpg",
+    "leftName": "AirPods Charging Station",
+    "rightName": "Samsung Wireless Univ.",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "Do you need a 3-in-1 nightstand tower or a reliable flat charging pad?",
+    "intro": "Cleaning up cable clutter is the ultimate goal of wireless chargers. We tested a multi-device charging stand optimized for the Apple ecosystem against a fan-cooled, high-speed universal Samsung charging pad.",
+    "leftPros": [
+      "Charges phone, watch, and buds",
+      "Cleans up nightstand cable mess",
+      "Compact stand"
+    ],
+    "leftCons": [
+      "Watch charger sometimes finicky",
+      "Bright LED at night"
+    ],
+    "rightPros": [
+      "Built-in fan prevents overheating",
+      "Works with all Qi devices",
+      "Reliable power delivery"
+    ],
+    "rightCons": [
+      "Fan has an audible hum",
+      "Phone must be positioned exactly right"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Wireless Chargers",
+        "right": "Wireless Chargers"
+      },
+      {
+        "label": "Key Feature",
+        "left": "3-in-1 Design",
+        "right": "Fan Cooling"
+      },
+      {
+        "label": "Secondary",
+        "left": "Fast Charge 15W",
+        "right": "15W Fast Charge"
+      },
+      {
+        "label": "Downside",
+        "left": "Watch charger sometimes finicky",
+        "right": "Fan has an audible hum"
+      }
+    ],
+    "verdict": "Both the AirPods Charging Station and the Samsung Wireless Univ. provide excellent value, but they serve different users. If charges phone, watch, and buds is your main priority, go with AirPods Charging Station. If you care more about built-in fan prevents overheating, Samsung Wireless Univ. is the superior choice.",
+    "leftScore": 84,
+    "rightScore": 88,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0B3RC6M94",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B09MV4SRP1"
+  },
+  {
+    "slug": "samsonite-portfolio-vs-apple-finewoven",
+    "title": "Samsonite Leather Portfolio vs Apple FineWoven",
+    "subtitle": "The Executive Choice",
+    "category": "Premium Materials",
+    "rating": 6.7,
+    "readTime": "6 min read",
+    "trending": true,
+    "leftImg": "https://m.media-amazon.com/images/I/91FMC6sLZXL._AC_SY395_.jpg",
+    "rightImg": "https://m.media-amazon.com/images/I/51yjgy8YEtL._AC_SX342_.jpg",
+    "leftName": "Samsonite Leather Portfolio",
+    "rightName": "Apple FineWoven Case",
+    "leftBg": "bg-gray-50",
+    "rightBg": "bg-blue-50",
+    "excerpt": "Old-school genuine leather portfolio utility versus modern microtwill.",
+    "intro": "When heading into the boardroom, your accessories matter. We put a classic Samsonite full-leather portfolio case against Apple's modern eco-friendly FineWoven option to see which projects more power and professionalism.",
+    "leftPros": [
+      "Extremely professional look",
+      "Ages beautifully with patina",
+      "Replaces wallet"
+    ],
+    "leftCons": [
+      "Bulky in pocket",
+      "Leather requires maintenance"
+    ],
+    "rightPros": [
+      "Incredibly soft texture",
+      "68% post-consumer content",
+      "Official Apple colors"
+    ],
+    "rightCons": [
+      "Shows scuffs permanently",
+      "Not water resistant"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "left": "Premium Materials",
+        "right": "Premium Materials"
+      },
+      {
+        "label": "Key Feature",
+        "left": "Genuine Leather",
+        "right": "Microtwill Fabric"
+      },
+      {
+        "label": "Secondary",
+        "left": "Card Slots",
+        "right": "Exact Apple Fit"
+      },
+      {
+        "label": "Downside",
+        "left": "Bulky in pocket",
+        "right": "Shows scuffs permanently"
+      }
+    ],
+    "verdict": "Both the Samsonite Leather Portfolio and the Apple FineWoven Case provide excellent value, but they serve different users. If extremely professional look is your main priority, go with Samsonite Leather Portfolio. If you care more about incredibly soft texture, Apple FineWoven Case is the superior choice.",
+    "leftScore": 93,
+    "rightScore": 75,
+    "leftAmazonUrl": "https://www.amazon.com/dp/B07QX1RPQM",
+    "rightAmazonUrl": "https://www.amazon.com/dp/B0CHWV7J2W"
+  }
+];

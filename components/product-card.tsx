@@ -18,13 +18,13 @@ export function ProductCard({ title, description, image, emoji, color, badge, ra
   return (
     <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-2 cursor-pointer bg-gradient-to-br from-background to-background hover:from-primary/5 hover:to-secondary/5">
       {/* Header — real image or fallback gradient */}
-      <div className="h-44 relative overflow-hidden bg-muted">
+      <div className="h-44 relative overflow-hidden bg-white border-b border-border/10">
         {image ? (
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
           />
         ) : (
           <div className={`absolute inset-0 bg-gradient-to-r ${color ?? 'from-primary'} to-transparent flex items-center justify-end pr-6`}>

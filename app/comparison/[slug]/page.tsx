@@ -59,18 +59,18 @@ export default async function ComparisonArticlePage({
       {/* VS visual */}
       <section className="py-10">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-2 rounded-2xl overflow-hidden shadow-lg h-96 relative">
+          <div className="grid grid-cols-2 rounded-2xl overflow-hidden shadow-lg h-96 relative bg-white">
             <div className="relative overflow-hidden">
-              <Image src={item.leftImg} alt={item.leftName} fill className="object-cover" />
-              <div className="absolute inset-0 bg-black/20" />
-              <span className="absolute bottom-4 left-0 right-0 text-center text-sm font-bold text-white drop-shadow-lg">
+              <Image src={item.leftImg} alt={item.leftName} fill className="object-contain p-6" />
+              <div className="absolute inset-0 bg-black/5 mix-blend-multiply" />
+              <span className="absolute bottom-4 left-0 right-0 text-center text-sm font-bold text-slate-800 bg-white/90 backdrop-blur mx-6 py-2 rounded-xl shadow-sm border border-black/5">
                 {item.leftName}
               </span>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={item.rightImg} alt={item.rightName} fill className="object-cover" />
-              <div className="absolute inset-0 bg-black/20" />
-              <span className="absolute bottom-4 left-0 right-0 text-center text-sm font-bold text-white drop-shadow-lg">
+            <div className="relative overflow-hidden border-l border-border/50">
+              <Image src={item.rightImg} alt={item.rightName} fill className="object-contain p-6" />
+              <div className="absolute inset-0 bg-black/5 mix-blend-multiply" />
+              <span className="absolute bottom-4 left-0 right-0 text-center text-sm font-bold text-slate-800 bg-white/90 backdrop-blur mx-6 py-2 rounded-xl shadow-sm border border-black/5">
                 {item.rightName}
               </span>
             </div>
@@ -125,8 +125,8 @@ export default async function ComparisonArticlePage({
             {/* Left */}
             <Card className="p-6 border-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="relative w-10 h-10 rounded-lg overflow-hidden shrink-0">
-                  <Image src={item.leftImg} alt={item.leftName} fill className="object-cover" />
+                <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-white border">
+                  <Image src={item.leftImg} alt={item.leftName} fill className="object-contain p-1" />
                 </div>
                 <h3 className="font-bold text-lg">{item.leftName}</h3>
               </div>
@@ -160,8 +160,8 @@ export default async function ComparisonArticlePage({
             {/* Right */}
             <Card className="p-6 border-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="relative w-10 h-10 rounded-lg overflow-hidden shrink-0">
-                  <Image src={item.rightImg} alt={item.rightName} fill className="object-cover" />
+                <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-white border">
+                  <Image src={item.rightImg} alt={item.rightName} fill className="object-contain p-1" />
                 </div>
                 <h3 className="font-bold text-lg">{item.rightName}</h3>
               </div>

@@ -2,32 +2,37 @@
 
 import { ProductCard } from './product-card'
 import Link from 'next/link'
+import { products } from '@/lib/products'
 
 export function FeaturedProducts() {
+  const p1 = products.find(p => p.id === 'samsonite-leather-portfolio')
+  const p2 = products.find(p => p.id === 'elago-mag-silicone')
+  const p3 = products.find(p => p.id === 'apple-finewoven')
+
   const topProducts = [
     {
-      title: 'Leather Case',
-      description: 'Premium protection with elegant style',
-      image: '/images/cards/leather-case.jpg',
+      title: p1?.name || 'Leather Case',
+      description: p1?.pros[0] || 'Premium protection with elegant style',
+      image: p1?.image || '',
       badge: 'Premium',
       rating: 5,
-      link: '/comparison'
+      link: `/comparison/samsonite-portfolio-vs-apple-finewoven`
     },
     {
-      title: 'Silicone Case',
-      description: 'Lightweight and convenient protection',
-      image: '/images/cards/silicone-case.jpg',
+      title: p2?.name || 'Silicone Case',
+      description: p2?.pros[0] || 'Lightweight and convenient protection',
+      image: p2?.image || '',
       badge: 'Popular',
-      rating: 4,
-      link: '/comparison'
+      rating: 4.5,
+      link: `/comparison/apple-finewoven-vs-elago-magnetic`
     },
     {
-      title: 'Eco Case',
-      description: 'Eco-friendly choice for the planet',
-      image: '/images/cards/eco-case.jpg',
+      title: p3?.name || 'Eco Case',
+      description: p3?.pros[1] || 'Eco-friendly choice for the planet',
+      image: p3?.image || '',
       badge: 'Eco-Friendly',
       rating: 4.5,
-      link: '/guide'
+      link: `/comparison/samsonite-portfolio-vs-apple-finewoven`
     },
   ]
 
