@@ -1,16 +1,16 @@
 {
-  "name": "EasyCo - Product Comparison Blog",
+  "name": "EasyCovers - Product Comparison Blog",
   "version": "1.0.0",
   "description": "Modern product comparison blog with honest reviews, pros/cons analysis, and guides",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/easyco"
+    "url": "https://github.com/yourusername/EasyCovers"
   },
   "projectConfig": {
-    "title": "EasyCo",
+    "title": "EasyCovers",
     "tagline": "Честные сравнения товаров",
     "description": "Блог для сравнения товаров с анализом плюсов, минусов и честными обзорами",
-    "website": "https://easyco.vercel.app"
+    "website": "https://EasyCovers.vercel.app"
   },
   "design": {
     "colorPalette": {
@@ -86,7 +86,7 @@
       "Email Subscription"
     ],
     "seo": {
-      "title": "EasyCo - Сравнение товаров",
+      "title": "EasyCovers - Сравнение товаров",
       "description": "Честные сравнения и обзоры товаров. Полная информация о плюсах и минусах.",
       "keywords": [
         "сравнение товаров",

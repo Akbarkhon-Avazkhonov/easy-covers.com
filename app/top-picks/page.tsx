@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { products } from '@/lib/products'
 
 export default function TopPicksPage() {
-  const p1 = products.find(p => p.id === 'samsonite-leather-portfolio')
+  const p1 = products.find(p => p.id === 'custom-embossed-iphone')
   const p2 = products.find(p => p.id === 'spigen-tough-magsafe')
   const p3 = products.find(p => p.id === 'anker-magsafe-bank')
   const p4 = products.find(p => p.id === 'zagg-invisible-shield')
@@ -177,7 +177,7 @@ export default function TopPicksPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card className="p-5 border-2 hover:border-primary/50 transition">
                   <p className="font-bold mb-2 flex items-center gap-2">🎯 For Business & Executives</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">Go for the <strong>Samsonite Leather Portfolio</strong>. It provides superior genuine leather quality, professional aesthetics, and completely replaces the need to carry a separate wallet to meetings.</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Go for the <strong>Custom Embossed Leather Case</strong>. It provides superior genuine leather quality, professional bespoke aesthetics, and a completely personalized touch representing your brand.</p>
                 </Card>
                 <Card className="p-5 border-2 hover:border-primary/50 transition">
                   <p className="font-bold mb-2 flex items-center gap-2">🛡️ For Ultimate Drop Security</p>

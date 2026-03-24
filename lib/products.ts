@@ -166,26 +166,26 @@ export const products: Product[] = [
     "score": 80
   },
   {
-    "id": "samsonite-leather-portfolio",
-    "name": "Samsonite Leather Portfolio",
+    "id": "custom-embossed-iphone",
+    "name": "Custom Embossed Leather",
     "category": "Premium Materials",
-    "amazonUrl": "https://www.amazon.com/dp/B07QX1RPQM",
-    "image": "https://m.media-amazon.com/images/I/91FMC6sLZXL._AC_SY395_.jpg",
+    "amazonUrl": "https://www.amazon.com/dp/B0CLJS22XD",
+    "image": "/images/cards/leather-case.jpg",
     "keyFeatures": [
-      "Genuine Leather",
-      "Card Slots",
-      "Executive Finish"
+      "Custom Monogram",
+      "Genuine Premium Leather",
+      "Slim Profile Map"
     ],
     "pros": [
-      "Extremely professional look",
+      "Unique personalized touch",
       "Ages beautifully with patina",
-      "Replaces wallet"
+      "Perfect gift item"
     ],
     "cons": [
-      "Bulky in pocket",
-      "Leather requires maintenance"
+      "Cannot be returned once embossed",
+      "Longer shipping time"
     ],
-    "score": 93
+    "score": 91
   },
   {
     "id": "apple-finewoven",

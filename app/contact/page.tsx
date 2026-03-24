@@ -75,7 +75,7 @@ export default function ContactPage() {
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-bold mb-2" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>Email</h3>
-                <p className="text-sm text-muted-foreground">hello@easyco.com</p>
+                <p className="text-sm text-muted-foreground">hello@EasyCovers.com</p>
               </Card>
 
               <Card className="p-6 border-2">

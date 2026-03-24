@@ -10,7 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="font-bold text-lg">EasyCo</span>
+              <span className="font-bold text-lg">EasyCovers</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Honest product comparisons and tests
@@ -31,7 +31,7 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-border pt-8 flex flex-col gap-2">
           <p className="text-sm text-muted-foreground">
-            © 2026 EasyCo. All rights reserved.
+            © 2026 EasyCovers. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/70">
             As an Amazon Associate, we earn from qualifying purchases.

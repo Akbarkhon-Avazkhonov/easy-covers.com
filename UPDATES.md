@@ -70,7 +70,7 @@
 - "Информация" → "Legal"
 - "Политика конфиденциальности" → "Privacy Policy"
 - "Условия использования" → "Terms of Use"
-- "© 2026 EasyCo. Все права защищены." → "© 2026 EasyCo. All rights reserved."
+- "© 2026 EasyCovers. Все права защищены." → "© 2026 EasyCovers. All rights reserved."
 
 ### 🎯 Technical Improvements
 - Simplified favicon configuration for better compatibility

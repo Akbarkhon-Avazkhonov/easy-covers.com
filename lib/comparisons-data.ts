@@ -463,29 +463,29 @@ export const comparisons: ComparisonData[] = [
     "rightAmazonUrl": "https://www.amazon.com/dp/B09MV4SRP1"
   },
   {
-    "slug": "samsonite-portfolio-vs-apple-finewoven",
-    "title": "Samsonite Leather Portfolio vs Apple FineWoven",
+    "slug": "custom-embossed-vs-apple-finewoven",
+    "title": "Custom Embossed Leather vs Apple FineWoven",
     "subtitle": "The Executive Choice",
     "category": "Premium Materials",
     "rating": 6.7,
     "readTime": "6 min read",
     "trending": true,
-    "leftImg": "https://m.media-amazon.com/images/I/91FMC6sLZXL._AC_SY395_.jpg",
+    "leftImg": "/images/cards/leather-case.jpg",
     "rightImg": "https://m.media-amazon.com/images/I/51yjgy8YEtL._AC_SX342_.jpg",
-    "leftName": "Samsonite Leather Portfolio",
+    "leftName": "Custom Embossed Leather",
     "rightName": "Apple FineWoven Case",
     "leftBg": "bg-gray-50",
     "rightBg": "bg-blue-50",
-    "excerpt": "Old-school genuine leather portfolio utility versus modern microtwill.",
-    "intro": "When heading into the boardroom, your accessories matter. We put a classic Samsonite full-leather portfolio case against Apple's modern eco-friendly FineWoven option to see which projects more power and professionalism.",
+    "excerpt": "Premium bespoke genuine leather versus Apple's modern microtwill.",
+    "intro": "When heading into the boardroom, your accessories matter. We put a personalized custom-embossed leather case against Apple's modern eco-friendly FineWoven option to see which projects more power and professionalism.",
     "leftPros": [
-      "Extremely professional look",
+      "Unique personalized touch",
       "Ages beautifully with patina",
-      "Replaces wallet"
+      "Perfect gift item"
     ],
     "leftCons": [
-      "Bulky in pocket",
-      "Leather requires maintenance"
+      "Cannot be returned once embossed",
+      "Longer shipping time"
     ],
     "rightPros": [
       "Incredibly soft texture",
@@ -504,24 +504,24 @@ export const comparisons: ComparisonData[] = [
       },
       {
         "label": "Key Feature",
-        "left": "Genuine Leather",
+        "left": "Custom Monogram",
         "right": "Microtwill Fabric"
       },
       {
         "label": "Secondary",
-        "left": "Card Slots",
+        "left": "Genuine Premium Leather",
         "right": "Exact Apple Fit"
       },
       {
         "label": "Downside",
-        "left": "Bulky in pocket",
+        "left": "Cannot be returned once embossed",
         "right": "Shows scuffs permanently"
       }
     ],
-    "verdict": "Both the Samsonite Leather Portfolio and the Apple FineWoven Case provide excellent value, but they serve different users. If extremely professional look is your main priority, go with Samsonite Leather Portfolio. If you care more about incredibly soft texture, Apple FineWoven Case is the superior choice.",
-    "leftScore": 93,
+    "verdict": "Both the Custom Embossed Leather and the Apple FineWoven Case provide excellent value, but they serve different users. If unique personalized touch is your main priority, go with Custom Embossed Leather. If you care more about incredibly soft texture, Apple FineWoven Case is the superior choice.",
+    "leftScore": 91,
     "rightScore": 75,
-    "leftAmazonUrl": "https://www.amazon.com/dp/B07QX1RPQM",
+    "leftAmazonUrl": "https://www.amazon.com/dp/B0CLJS22XD",
     "rightAmazonUrl": "https://www.amazon.com/dp/B0CHWV7J2W"
   }
 ];

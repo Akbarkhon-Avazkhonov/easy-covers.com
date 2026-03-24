@@ -29,35 +29,35 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">1. Acceptance of Terms</h2>
               <p>
-                By accessing or using the EasyCo website, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please do not use our site. We reserve the right to modify these terms at any time without prior notice.
+                By accessing or using the EasyCovers website, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please do not use our site. We reserve the right to modify these terms at any time without prior notice.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">2. Content and Accuracy</h2>
               <p>
-                All product comparisons, reviews, and ratings on EasyCo are based on our independent testing and research. We strive for accuracy but cannot guarantee that all information is complete or up to date. Product specifications and prices may change without notice.
+                All product comparisons, reviews, and ratings on EasyCovers are based on our independent testing and research. We strive for accuracy but cannot guarantee that all information is complete or up to date. Product specifications and prices may change without notice.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">3. Affiliate Links</h2>
               <p>
-                Some links on EasyCo are affiliate links. This means we may earn a small commission if you make a purchase through our links, at no additional cost to you. This does not influence our editorial decisions or product rankings.
+                Some links on EasyCovers are affiliate links. This means we may earn a small commission if you make a purchase through our links, at no additional cost to you. This does not influence our editorial decisions or product rankings.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">4. Intellectual Property</h2>
               <p>
-                All content on EasyCo — including text, images, graphics, and comparison data — is the property of EasyCo and is protected by copyright law. You may not reproduce, distribute, or republish any content without our written permission.
+                All content on EasyCovers — including text, images, graphics, and comparison data — is the property of EasyCovers and is protected by copyright law. You may not reproduce, distribute, or republish any content without our written permission.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">5. Limitation of Liability</h2>
               <p>
-                EasyCo is not liable for any loss or damage arising from your reliance on information published on this site. All purchasing decisions are made at your own risk. We recommend verifying product details directly with the manufacturer or retailer before buying.
+                EasyCovers is not liable for any loss or damage arising from your reliance on information published on this site. All purchasing decisions are made at your own risk. We recommend verifying product details directly with the manufacturer or retailer before buying.
               </p>
             </div>
 

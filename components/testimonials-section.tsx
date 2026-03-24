@@ -7,7 +7,7 @@ const testimonials = [
     name: 'Marcus Webb',
     role: 'iPhone 16 user',
     stars: 5,
-    text: "I was about to spend $90 on a leather case. EasyCo's breakdown saved me from a purchase I would've regretted. The cons section is brutally honest.",
+    text: "I was about to spend $90 on a leather case. EasyCovers's breakdown saved me from a purchase I would've regretted. The cons section is brutally honest.",
     avatar: '/images/avatars/marcus.jpg',
   },
   {

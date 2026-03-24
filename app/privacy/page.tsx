@@ -29,7 +29,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">1. Information We Collect</h2>
               <p>
-                EasyCo collects information you provide directly to us, such as when you subscribe to our newsletter, submit a contact form, or leave a comment. This may include your name and email address. We do not collect payment information.
+                EasyCovers collects information you provide directly to us, such as when you subscribe to our newsletter, submit a contact form, or leave a comment. This may include your name and email address. We do not collect payment information.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3">6. Your Rights</h2>
               <p>
-                You have the right to access, correct, or delete any personal information we hold about you. To exercise any of these rights, please contact us at privacy@easyco.com. We will respond within 30 days.
+                You have the right to access, correct, or delete any personal information we hold about you. To exercise any of these rights, please contact us at privacy@EasyCovers.com. We will respond within 30 days.
               </p>
             </div>
 

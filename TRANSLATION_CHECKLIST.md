@@ -4,7 +4,7 @@
 
 ### Layout & Metadata ✅
 - [x] HTML lang attribute: "ru" → "en"
-- [x] Page title: "EasyCo - Сравнение товаров" → "EasyCo - Product Comparisons & Reviews"
+- [x] Page title: "EasyCovers - Сравнение товаров" → "EasyCovers - Product Comparisons & Reviews"
 - [x] Meta description updated to English
 
 ### Header Navigation ✅

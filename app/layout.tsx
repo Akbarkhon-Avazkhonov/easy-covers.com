@@ -3,18 +3,18 @@ import { Space_Grotesk, Plus_Jakarta_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const spaceGrotesk = Space_Grotesk({ 
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk'
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({ 
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-plus-jakarta-sans'
 });
 
 export const metadata: Metadata = {
-  title: 'EasyCo - Product Comparisons & Reviews',
+  title: 'EasyCovers - Product Comparisons & Reviews',
   description: 'Honest product comparisons and reviews. Discover the pros and cons of every product you want to buy.',
   generator: 'v0.app',
   icons: {

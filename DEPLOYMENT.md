@@ -1,4 +1,4 @@
-# 🚀 EasyCo - Инструкция по развертыванию
+# 🚀 EasyCovers - Инструкция по развертыванию
 
 ## Быстрый старт
 
@@ -21,9 +21,9 @@ pnpm dev
 # 1. Создайте репозиторий на GitHub
 git init
 git add .
-git commit -m "Initial commit: EasyCo product comparison blog"
+git commit -m "Initial commit: EasyCovers product comparison blog"
 git branch -M main
-git remote add origin https://github.com/yourusername/easyco.git
+git remote add origin https://github.com/yourusername/EasyCovers.git
 git push -u origin main
 
 # 2. На Vercel (vercel.com):
@@ -184,7 +184,7 @@ pnpm dev -- -p 3001
 ## 🔐 SEO
 
 Настроены метаданные в `app/layout.tsx`:
-- Title: "EasyCo - Сравнение товаров"
+- Title: "EasyCovers - Сравнение товаров"
 - Description: "Честные сравнения и обзоры товаров"
 
 ## 📞 Поддержка
@@ -196,4 +196,4 @@ pnpm dev -- -p 3001
 
 ---
 
-**Спасибо за использование EasyCo! 🍪**
+**Спасибо за использование EasyCovers! 🍪**
